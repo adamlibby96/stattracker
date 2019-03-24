@@ -1,12 +1,20 @@
-<Page class="page"
-    navigatingTo="onNavigatingTo"  
+<Page class="page" navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Home"></Label>
+        <Label class="action-bar-title" text="Character Selection"></Label>
     </ActionBar>
 
-    <GridLayout>
-        <!-- Add your page content here -->
-    </GridLayout>
+    <ScrollView height="100%">
+        <GridLayout rows="* * *">
+            <StackLayout row="0" id="playerList">
+
+            </StackLayout>
+            <StackLayout row="1" minHeight="350" id="PlayerRenderer">
+            </StackLayout>
+            <StackLayout row="2">
+                <Label text="Must Have 3 to 6 Players" />
+            </StackLayout>
+        </GridLayout>
+    </ScrollView>
 </Page>
